@@ -1,0 +1,41 @@
+{
+  "id": "atp_segment_processor_general_config",
+  "jms": {
+    "topicName": "Consumer.SegProc.VirtualTopic.CrossScreenTargetingV3",
+    "concurrentConsumers": 3,
+    "maxConcurrentConsumers": 3,
+    "connections": [
+        "tcp://m-prd-atpactivemq01.advertising.aol.com:61616?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq02.advertising.aol.com:61616?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq03.advertising.aol.com:61616?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq01.advertising.aol.com:61617?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq02.advertising.aol.com:61617?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq03.advertising.aol.com:61617?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq01.advertising.aol.com:61618?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq02.advertising.aol.com:61618?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq03.advertising.aol.com:61618?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq01.advertising.aol.com:61619?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq02.advertising.aol.com:61619?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048",
+        "tcp://m-prd-atpactivemq03.advertising.aol.com:61619?socketBufferSize=262144&ioBufferSize=32768&wireFormat.cacheSize=2048"
+    ]
+  },
+  "redis": {
+    "connections": 128,
+    "password": "V3ZdvdFD53yNO3GmtAL8sXlfJLLViwvB",
+    "shard_config": [
+    <% @shards.each_with_index do |shard_config, i| -%>
+        {
+            "hostname":"<%= @shard_config.hostname %>",
+            "shards" : [
+            <% @shard_config[:aliases].each_with_index do |alias, j| -%>
+                {
+                    "alias": "<%= @alias[:alias_name] %>",
+                    "port": <%= @alias[:port] %>
+                }<% unless j == @alias.size - 1 -%>,<% end %>
+            <% end %>                
+            ]        
+        }<% unless i == @shards.size - 1 -%>,<% end %>
+    <% end %>
+    ]
+  }
+}
