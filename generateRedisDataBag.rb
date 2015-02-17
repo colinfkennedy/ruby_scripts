@@ -1,5 +1,4 @@
-require 'erb'
-require 'ostruct'
+require 'erubis'
 
 def load_properties(properties_filename)
     properties = {}
@@ -19,13 +18,13 @@ def load_properties(properties_filename)
     properties
 end
 
-data = OpenStruct.new(
+data = {
     shards: [
         {
             hostname: "colin_hostname",
             aliases: [
                 {
-                    alias_name: "test_alias",
+                    name: "test_alias",
                     port: "test_port"
                 }
             ]
@@ -34,17 +33,18 @@ data = OpenStruct.new(
             hostname: "colin_hostname_2",
             aliases: [
                 {
-                    alias_name: "test_alias",
+                    name: "test_alias",
                     port: "test_port"
                 },
 {
-                    alias_name: "test_alias_2",
+                    name: "test_alias_2",
                     port: "test_port_2"
                 }                
             ]
         }        
     ]
-)
+}
 
-template = ERB.new File.new("dataBag.json.erb").read, nil, "%"
-puts template.result(data.instance_eval { binding })
+template = File.read("dataBag.json.erb")
+template = Erubis::Eruby.new(template)
+puts template.result(data)
