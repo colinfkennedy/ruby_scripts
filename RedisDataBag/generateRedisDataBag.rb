@@ -18,6 +18,17 @@ def load_properties(properties_filename)
     properties
 end
 
+redis_props = load_properties('redis.properties')
+
+puts "Redis Props"
+puts
+puts redis_props
+puts
+puts "Redis Shards Props"
+
+redis_shards_props = load_properties('redis_shards.properties')
+puts redis_shards_props
+
 data = {
     shards: [
         {
@@ -47,4 +58,4 @@ data = {
 
 template = File.read("dataBag.json.erb")
 template = Erubis::Eruby.new(template)
-puts template.result(data)
+# puts template.result(data)
