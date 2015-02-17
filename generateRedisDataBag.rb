@@ -29,10 +29,22 @@ data = OpenStruct.new(
                     port: "test_port"
                 }
             ]
-        }
-
+        },
+    {
+            hostname: "colin_hostname_2",
+            aliases: [
+                {
+                    alias_name: "test_alias",
+                    port: "test_port"
+                },
+{
+                    alias_name: "test_alias_2",
+                    port: "test_port_2"
+                }                
+            ]
+        }        
     ]
 )
 
 template = ERB.new File.new("dataBag.json.erb").read, nil, "%"
-template.result(data.instance_eval { binding })
+puts template.result(data.instance_eval { binding })
