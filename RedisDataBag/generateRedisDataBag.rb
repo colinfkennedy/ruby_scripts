@@ -40,7 +40,7 @@ redis_props.each do |key, value|
 
         shard_name_node = port_node.next_element.next_element
         shard_name_key = shard_name_node.attribute("value").to_s[2...-1]
-        alias_hash[:name] = redis_shards_props[shard_name_key]
+        alias_hash[:alias] = redis_shards_props[shard_name_key]
 
         shard[:shards].push alias_hash
     end
