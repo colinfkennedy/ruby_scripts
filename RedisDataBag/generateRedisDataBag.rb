@@ -32,7 +32,7 @@ redis_props.each do |key, value|
     hostname_nodes = redis_shards_xml.css("bean constructor-arg[index='0'][value='${" + key + "}']")
     shard = Hash.new
     shard[:hostname] = value
-    shard[:aliases] = Array.new
+    shard[:shards] = Array.new
     hostname_nodes.each do |hostname_node|
         alias_hash = Hash.new
         port_node = hostname_node.next_element
@@ -42,7 +42,7 @@ redis_props.each do |key, value|
         shard_name_key = shard_name_node.attribute("value").to_s[2...-1]
         alias_hash[:name] = redis_shards_props[shard_name_key]
 
-        shard[:aliases].push alias_hash
+        shard[:shards].push alias_hash
     end
     shards.push shard
 end
@@ -55,6 +55,6 @@ shards_hash = {
 
 template = File.read("dataBag.json.erb")
 template = Erubis::Eruby.new(template)
-File.open('atp-segment-processor-general-config.json', 'w') { |file| file.write(template.result(shards_hash)) } 
+File.open('atp_segment_processor_general_config.json', 'w') { |file| file.write(template.result(shards_hash)) } 
 
 puts "Done"
