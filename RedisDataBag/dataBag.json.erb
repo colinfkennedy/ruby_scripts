@@ -24,17 +24,7 @@
     "password": "V3ZdvdFD53yNO3GmtAL8sXlfJLLViwvB",
     "shard_config": [
     <% shards.each_with_index do |shard_config, i| -%>
-        {
-            "hostname":"<%= shard_config[:hostname] %>",
-            "shards" : [
-            <% shard_config[:aliases].each_with_index do |shard, j| -%>
-                {
-                    "alias": "<%= shard[:name] %>",
-                    "port": <%= shard[:port] %>
-                }<% unless j == shard_config[:aliases].size - 1 %>,<% end %>
-            <% end -%>                
-            ]        
-        }<% unless i == shards.size - 1 %>,<% end %>
+        <%= shard_config.to_json -%><% unless i == shards.size - 1 %>,<% end %>
     <% end -%>
     ]
   }

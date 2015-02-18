@@ -1,0 +1,4665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	<!-- Redis machine 1 -->
+	<bean id="jedisShardInfo_shard1" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.1}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard2" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.2}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard3" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.3}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard4" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.4}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard5" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.5}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard6" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.6}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard7" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.7}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard8" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.8}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard9" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.9}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard10" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.1}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.10}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 2 -->
+	<bean id="jedisShardInfo_shard15" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.15}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard16" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.16}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard17" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.17}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard18" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.18}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard19" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.19}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard20" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.20}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard21" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.21}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard22" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.22}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard23" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.23}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard24" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.2}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.24}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 3 -->
+	<bean id="jedisShardInfo_shard29" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.29}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard30" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.30}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard31" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.31}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard32" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.32}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard33" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.33}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard34" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.34}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard35" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.35}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard36" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.36}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard37" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.37}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard38" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.3}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.38}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 4 -->
+	<bean id="jedisShardInfo_shard43" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.43}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard44" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.44}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard45" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.45}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard46" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.46}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard47" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.47}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard48" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.48}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard49" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.49}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard50" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.50}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard51" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.51}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard52" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.4}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.52}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 5 -->
+	<bean id="jedisShardInfo_shard57" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.57}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard58" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.58}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard59" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.59}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard60" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.60}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard61" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.61}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard62" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.62}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard63" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.63}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard64" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.64}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard65" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.65}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard66" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.5}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.66}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 6 -->
+	<bean id="jedisShardInfo_shard71" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.71}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard72" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.72}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard73" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.73}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard74" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.74}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard75" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.75}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard76" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.76}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard77" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.77}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard78" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.78}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard79" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.79}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard80" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.6}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.80}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 7 -->
+	<bean id="jedisShardInfo_shard85" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.85}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard86" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.86}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard87" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.87}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard88" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.88}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard89" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.89}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard90" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.90}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard91" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.91}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard92" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.92}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard93" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.93}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard94" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.7}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.94}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 8 -->
+	<bean id="jedisShardInfo_shard99" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.99}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard100" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.100}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard101" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.101}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard102" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.102}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard103" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.103}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard104" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.104}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard105" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.105}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard106" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.106}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard107" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.107}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard108" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.8}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.108}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 9 -->
+	<bean id="jedisShardInfo_shard113" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.113}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard114" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.114}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard115" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.115}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard116" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.116}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard117" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.117}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard118" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.118}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard119" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.119}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard120" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.120}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard121" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.121}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard122" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.9}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.122}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 10 -->
+	<bean id="jedisShardInfo_shard127" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.127}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard128" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.128}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard129" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.129}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard130" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.130}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard131" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.131}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard132" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.132}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard133" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.133}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard134" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.134}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard135" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.135}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard136" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.10}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.136}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 11 -->
+	<bean id="jedisShardInfo_shard141" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.141}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard142" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.142}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard143" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.143}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard144" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.144}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard145" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.145}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard146" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.146}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard147" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.147}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard148" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.148}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard149" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.149}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard150" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.11}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.150}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 12 -->
+	<bean id="jedisShardInfo_shard155" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.155}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard156" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.156}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard157" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.157}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard158" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.158}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard159" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.159}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard160" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.160}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard161" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.161}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard162" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.162}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard163" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.163}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard164" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.12}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.164}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 13 -->
+	<bean id="jedisShardInfo_shard169" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.169}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard170" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.170}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard171" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.171}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard172" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.172}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard173" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.173}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard174" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.174}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard175" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.175}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard176" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.176}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard177" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.177}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard178" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.13}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.178}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 14 -->
+	<bean id="jedisShardInfo_shard183" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.183}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard184" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.184}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard185" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.185}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard186" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.186}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard187" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.187}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard188" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.188}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard189" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.189}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard190" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.190}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard191" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.191}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard192" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.14}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.192}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 15 -->
+	<bean id="jedisShardInfo_shard197" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.197}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard198" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.198}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard199" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.199}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard200" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.200}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard201" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.201}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard202" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.202}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard203" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.203}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard204" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.204}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard205" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.205}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard206" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.15}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.206}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 16 -->
+	<bean id="jedisShardInfo_shard211" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.211}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard212" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.212}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard213" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.213}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard214" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.214}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard215" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.215}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard216" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.216}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard217" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.217}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard218" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.218}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard219" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.219}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard220" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.16}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.220}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 17 -->
+	<bean id="jedisShardInfo_shard225" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.225}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard226" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.226}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard227" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.227}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard228" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.228}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard229" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.229}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard230" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.230}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard231" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.231}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard232" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.232}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard233" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.233}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard234" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.17}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.234}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 18 -->
+	<bean id="jedisShardInfo_shard239" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.239}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard240" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.240}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard241" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.241}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard242" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.242}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard243" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.243}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard244" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.244}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard245" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.245}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard246" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.246}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard247" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.247}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard248" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.18}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.248}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 19 -->
+	<bean id="jedisShardInfo_shard253" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.253}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard254" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.254}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard255" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.255}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard256" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.256}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard257" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.257}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard258" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.258}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard259" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.259}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard260" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.260}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard261" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.261}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard262" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.19}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.262}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 20 -->
+	<bean id="jedisShardInfo_shard267" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.267}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard268" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.268}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard269" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.269}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard270" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.270}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard271" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.271}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard272" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.272}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard273" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.273}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard274" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.274}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard275" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.275}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard276" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.20}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.276}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 21 -->
+	<bean id="jedisShardInfo_shard281" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.281}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard282" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.282}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard283" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.283}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard284" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.284}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard285" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.285}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard286" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.286}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard287" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.287}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard288" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.288}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard289" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.289}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard290" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.21}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.290}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 22 -->
+	<bean id="jedisShardInfo_shard295" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.295}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard296" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.296}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard297" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.297}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard298" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.298}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard299" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.299}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard300" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.300}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard301" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.301}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard302" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.302}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard303" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.303}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard304" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.22}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.304}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 23 -->
+	<bean id="jedisShardInfo_shard309" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.309}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard310" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.310}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard311" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.311}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard312" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.312}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard313" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.313}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard314" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.314}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard315" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.315}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard316" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.316}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard317" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.317}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard318" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.23}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.318}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 24 -->
+	<bean id="jedisShardInfo_shard323" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.323}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard324" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.324}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard325" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.325}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard326" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.326}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard327" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.327}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard328" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.328}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard329" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.329}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard330" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.330}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard331" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.331}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard332" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.24}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.332}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 25 -->
+	<bean id="jedisShardInfo_shard337" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.337}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard338" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.338}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard339" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.339}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard340" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.340}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard341" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.341}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard342" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.342}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard343" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.343}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard344" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.344}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard345" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.345}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard346" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.25}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.346}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 26 -->
+	<bean id="jedisShardInfo_shard351" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.351}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard352" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.352}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard353" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.353}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard354" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.354}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard355" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.355}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard356" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.356}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard357" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.357}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard358" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.358}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard359" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.359}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard360" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.26}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.360}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 27 -->
+	<bean id="jedisShardInfo_shard365" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.365}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard366" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.366}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard367" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.367}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard368" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.368}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard369" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.369}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard370" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.370}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard371" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.371}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard372" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.372}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard373" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.373}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard374" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.27}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.374}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 28 -->
+	<bean id="jedisShardInfo_shard379" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.379}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard380" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.380}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard381" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.381}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard382" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.382}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard383" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.383}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard384" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.384}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard385" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.385}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard386" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.386}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard387" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.387}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard388" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.28}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.388}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 29 -->
+	<bean id="jedisShardInfo_shard393" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.393}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard394" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.394}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard395" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.395}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard396" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.396}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard397" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.397}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard398" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.398}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard399" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.399}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard400" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.400}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard401" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.401}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard402" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.29}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.402}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 30 -->
+	<bean id="jedisShardInfo_shard407" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.407}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard408" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.408}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard409" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.409}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard410" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.410}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard411" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.411}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard412" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.412}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard413" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.413}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard414" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.414}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard415" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.415}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard416" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.30}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.416}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 31 -->
+	<bean id="jedisShardInfo_shard11" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.11}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard12" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.12}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard13" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.13}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard14" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.14}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard25" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.25}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard26" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.26}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard27" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.27}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard28" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.28}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard39" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.39}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard40" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.31}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.40}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 32 -->
+	<bean id="jedisShardInfo_shard41" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.41}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard42" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.42}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard53" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.53}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard54" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.54}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard55" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.55}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard56" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.56}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard67" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.67}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard68" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.68}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard69" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.69}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard70" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.32}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.70}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 33 -->
+	<bean id="jedisShardInfo_shard81" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.81}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard82" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.82}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard83" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.83}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard84" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.84}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard95" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.95}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard96" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.96}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard97" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.97}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard98" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.98}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard109" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.109}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard110" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.33}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.110}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 34 -->
+	<bean id="jedisShardInfo_shard111" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.111}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard112" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.112}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard123" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.123}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard124" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.124}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard125" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.125}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard126" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.126}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard137" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.137}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard138" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.138}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard139" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.139}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard140" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.34}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.140}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 35 -->
+	<bean id="jedisShardInfo_shard151" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.151}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard152" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.152}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard153" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.153}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard154" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.154}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard165" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.165}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard166" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.166}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard167" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.167}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard168" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.168}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard179" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.179}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard180" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.35}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.180}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 36 -->
+	<bean id="jedisShardInfo_shard181" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.181}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard182" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.182}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard193" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.193}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard194" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.194}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard195" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.195}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard196" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.196}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard207" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.207}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard208" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.208}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard209" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.209}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard210" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.36}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.210}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 37 -->
+	<bean id="jedisShardInfo_shard221" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.221}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard222" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.222}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard223" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.223}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard224" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.224}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard235" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.235}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard236" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.236}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard237" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.237}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard238" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.238}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard249" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.249}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard250" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.37}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.250}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 38 -->
+	<bean id="jedisShardInfo_shard251" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.251}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard252" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.252}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard263" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.263}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard264" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.264}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard265" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.265}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard266" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.266}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard277" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.277}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard278" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.278}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard279" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.279}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard280" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.38}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.280}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 39 -->
+	<bean id="jedisShardInfo_shard291" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.291}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard292" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.292}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard293" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.293}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard294" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.294}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard305" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.305}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard306" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.306}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard307" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.307}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard308" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.308}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard319" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.319}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard320" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.39}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.320}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 40 -->
+	<bean id="jedisShardInfo_shard321" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.321}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard322" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.322}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard333" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.333}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard334" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.334}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard335" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.335}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard336" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.336}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard347" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.347}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard348" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.348}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard349" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.349}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard350" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.40}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.350}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 41 -->
+	<bean id="jedisShardInfo_shard361" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.361}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard362" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.362}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard363" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.363}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard364" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.364}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard375" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.375}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard376" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.376}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard377" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.377}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard378" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.378}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard389" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.389}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard390" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.41}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.390}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<!-- Redis machine 42 -->
+	<bean id="jedisShardInfo_shard391" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6379" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.391}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard392" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6380" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.392}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard403" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6381" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.403}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard404" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6382" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.404}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard405" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6383" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.405}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard406" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6384" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.406}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard417" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6385" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.417}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard418" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6386" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.418}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard419" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6387" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.419}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+
+	<bean id="jedisShardInfo_shard420" class="redis.clients.jedis.JedisShardInfo">
+		<constructor-arg index="0" type="java.lang.String"
+			value="${redis.host.42}" />
+		<constructor-arg index="1" type="int" value="6388" />
+		<constructor-arg index="2" type="int"
+			value="${redis.connections.timeout}" />
+		<constructor-arg index="3" type="java.lang.String"
+			value="${redis.shard.name.420}" />
+		<property name="password" value="${redis.password}" />
+	</bean>
+</beans>
