@@ -1,0 +1,5 @@
+-- Inserts to create AdapTV Data Sources in ATP
+<% names.each do |name| -%>
+INSERT INTO ATP.AUDIENCESOURCES (AUDIENCESOURCEID,NAME,ISTHIRDPARTY,CREATED,CREATEDBY,ISENABLED) VALUES (ATP.AudienceSource_SEQ.NEXTVAL,'<%= name %>','N',SYSDATE,'Colin Kennedy','Y');
+
+<% end -%>
